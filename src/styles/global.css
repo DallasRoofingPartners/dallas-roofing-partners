@@ -99,6 +99,12 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
 .section-text {
   max-width: 700px;
   margin: auto;
