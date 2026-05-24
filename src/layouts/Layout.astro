@@ -1,18 +1,27 @@
 ---
-const { title, description } = Astro.props;
 import "../styles/global.css";
+
+const {
+  title = "Dallas Roofing Partners",
+  description = "Dallas roofing and insurance restoration specialists.",
+} = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>{title}</title>
-  <meta name="description" content={description} />
-</head>
+  <head>
+    <meta charset="UTF-8" />
 
-<body>
-  <slot />
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{title}</title>
+
+    <meta name="description" content={description} />
+
+    <meta name="robots" content="index, follow" />
+  </head>
+
+  <body>
+    <slot />
+  </body>
 </html>
