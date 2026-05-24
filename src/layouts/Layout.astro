@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import LocalBusinessSchema from "../components/LocalBusinessSchema.astro";
+import LeadForm from "../components/LeadForm.astro";
 
 const {
   title = "Dallas Roofing Partners",
@@ -31,5 +32,11 @@ const {
     </nav>
 
     <slot />
+
+    <LeadForm />
+
+    <footer>
+      <p>© 2026 Dallas Roofing Partners. All rights reserved.</p>
+    </footer>
   </body>
 </html>
