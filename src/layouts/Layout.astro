@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import LocalBusinessSchema from "../components/LocalBusinessSchema.astro";
 
 const {
   title = "Dallas Roofing Partners",
@@ -19,9 +20,16 @@ const {
     <meta name="description" content={description} />
 
     <meta name="robots" content="index, follow" />
+
+    <LocalBusinessSchema />
   </head>
 
   <body>
+    <nav>
+      <a href="/">Dallas</a>
+      <a href="/richardson-roofing">Richardson</a>
+    </nav>
+
     <slot />
   </body>
 </html>
