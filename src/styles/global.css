@@ -250,3 +250,14 @@ nav a:hover {
     text-align: center;
   }
 }
+
+.card p {
+  color: #374151;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  color: #111827;
+  margin-bottom: 12px;
+}
