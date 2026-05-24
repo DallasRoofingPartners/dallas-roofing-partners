@@ -1,0 +1,42 @@
+:root {
+  --bg: #ffffff;
+  --text: #111827;
+  --primary: #0f172a;
+  --accent: #f59e0b;
+  --muted: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: auto;
+}
+
+section {
+  padding: 70px 0;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--accent);
+  color: black;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}

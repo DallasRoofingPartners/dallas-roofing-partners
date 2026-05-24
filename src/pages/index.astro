@@ -9,177 +9,414 @@
 
   <title>Dallas Roofing & Insurance Restoration | Free Roof Inspection</title>
 
-  <meta name="description" content="Dallas roofing specialists in storm damage and insurance restoration. Get a free roof inspection and help with your insurance claim." />
+  <meta
+    name="description"
+    content="Dallas roofing specialists for storm damage, roof replacement, and insurance restoration. Free inspections and insurance claim assistance."
+  />
 
-  <meta name="keywords" content="Dallas roofing, roof repair Dallas, storm damage roof, insurance roof claim, roof inspection Dallas" />
+  <meta
+    name="keywords"
+    content="Dallas roofing, roof repair Dallas, roof replacement Dallas, storm damage roofing, insurance restoration Dallas"
+  />
+
+  <meta name="robots" content="index, follow" />
 
   <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #f59e0b;
+      --light: #f8fafc;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--text);
       line-height: 1.6;
-      color: #111;
+      background: white;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: auto;
     }
 
     header {
-      padding: 80px 20px;
-      text-align: center;
-      background: #0f172a;
+      background: linear-gradient(
+        rgba(15, 23, 42, 0.92),
+        rgba(15, 23, 42, 0.92)
+      );
       color: white;
+      padding: 100px 20px;
+      text-align: center;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1.1;
+      margin-bottom: 20px;
+      max-width: 900px;
+      margin-inline: auto;
+    }
+
+    header p {
+      max-width: 700px;
+      margin-inline: auto;
+      font-size: 1.1rem;
+      color: #d1d5db;
+    }
+
+    .hero-buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: #f59e0b;
-      color: #000;
+      padding: 14px 24px;
+      border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 6px;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: black;
+    }
+
+    .btn-secondary {
+      border: 1px solid white;
+      color: white;
     }
 
     section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
+      padding: 80px 0;
     }
 
     h2 {
+      font-size: 2rem;
       margin-bottom: 15px;
+      text-align: center;
     }
 
-    ul {
-      padding-left: 20px;
+    .section-text {
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 40px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
     }
 
     .card {
-      border: 1px solid #ddd;
-      padding: 15px;
-      border-radius: 8px;
+      border: 1px solid var(--border);
+      padding: 25px;
+      border-radius: 10px;
+      background: white;
     }
 
-    footer {
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .process {
+      background: var(--light);
+    }
+
+    .process ol {
+      max-width: 700px;
+      margin: auto;
+      padding-left: 20px;
+    }
+
+    .trust-bar {
+      background: var(--primary);
+      color: white;
+      padding: 20px;
       text-align: center;
-      padding: 40px;
-      font-size: 0.9rem;
-      background: #f3f4f6;
+      font-weight: bold;
     }
 
-    input, select {
+    .cta {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      border-radius: 12px;
+      padding: 60px 30px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    input,
+    select,
+    textarea {
       width: 100%;
-      padding: 10px;
-      margin: 8px 0;
+      padding: 14px;
+      margin-bottom: 15px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 1rem;
     }
 
     button {
-      padding: 12px;
       width: 100%;
-      background: #0f172a;
-      color: white;
+      padding: 14px;
       border: none;
+      background: var(--primary);
+      color: white;
+      font-size: 1rem;
+      border-radius: 6px;
       cursor: pointer;
+    }
+
+    footer {
+      background: #f3f4f6;
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      section {
+        padding: 60px 0;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Dallas Roofing & Insurance Restoration Specialists</h1>
-  <p>We inspect storm damage, document your roof, and help maximize your insurance claim approval.</p>
-  <a href="#contact" class="btn">Get Free Roof Inspection</a>
-  <p style="margin-top:15px;font-size:0.9rem;">
-    ✔ Free inspection ✔ Insurance claim help ✔ Local Dallas experts
-  </p>
-</header>
+  <header>
+    <div class="container">
+      <h1>Dallas Roofing & Insurance Restoration Specialists</h1>
 
-<section>
-  <h2>Roofing Services</h2>
-  <div class="grid">
-    <div class="card">Storm Damage Roof Inspection</div>
-    <div class="card">Insurance Claim Assistance</div>
-    <div class="card">Roof Repair</div>
-    <div class="card">Roof Replacement</div>
-    <div class="card">Emergency Leak Repair</div>
-    <div class="card">Hail Damage Assessment</div>
+      <p>
+        Storm damage inspections, insurance claim assistance, roof repair,
+        and full roof replacement throughout Dallas and surrounding areas.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">
+          Get Free Roof Inspection
+        </a>
+
+        <a href="tel:+12145551234" class="btn btn-secondary">
+          Call Now
+        </a>
+      </div>
+
+      <p style="margin-top:25px;font-size:0.95rem;">
+        ✔ Free inspections &nbsp;
+        ✔ Insurance claim support &nbsp;
+        ✔ Local Dallas roofing experts
+      </p>
+    </div>
+  </header>
+
+  <div class="trust-bar">
+    Licensed • Insured • Storm Damage Specialists • Insurance Restoration
   </div>
-</section>
 
-<section>
-  <h2>Our Process</h2>
-  <ol>
-    <li>Free Roof Inspection</li>
-    <li>Damage Documentation</li>
-    <li>Insurance Claim Support</li>
-    <li>Repair or Replacement</li>
-  </ol>
-</section>
+  <section>
+    <div class="container">
+      <h2>Roofing Services</h2>
 
-<section>
-  <h2>Common Roof Issues in Dallas</h2>
-  <ul>
-    <li>Hail damage not visible from the ground</li>
-    <li>Missing or lifted shingles after storms</li>
-    <li>Leaks causing interior damage</li>
-    <li>Insurance underpayment or denied claims</li>
-    <li>Old or deteriorating roofing systems</li>
-  </ul>
-</section>
+      <p class="section-text">
+        Professional roofing and storm restoration services designed to help
+        homeowners recover quickly after hail, wind, and storm damage.
+      </p>
 
-<section>
-  <h2>Why Homeowners Choose Us</h2>
-  <ul>
-    <li>Local Dallas roofing specialists</li>
-    <li>Insurance claim guidance included</li>
-    <li>Fast response after storms</li>
-    <li>Honest inspections with photo evidence</li>
-  </ul>
-</section>
+      <div class="grid">
 
-<section>
-  <h2>Is Your Roof Damaged Without You Knowing?</h2>
-  <p>Storm damage is often invisible from the ground. Small issues can turn into costly repairs if ignored.</p>
-  <a href="#contact" class="btn">Request Free Inspection</a>
-</section>
+        <div class="card">
+          <h3>Storm Damage Inspections</h3>
+          <p>
+            Detailed inspections with documentation for insurance claims.
+          </p>
+        </div>
 
-<section id="contact">
-  <h2>Request Free Roof Inspection</h2>
+        <div class="card">
+          <h3>Insurance Claim Assistance</h3>
+          <p>
+            We help homeowners navigate the insurance restoration process.
+          </p>
+        </div>
 
-  <form>
-    <input type="text" placeholder="Full Name" required />
-    <input type="tel" placeholder="Phone Number" required />
-    <input type="text" placeholder="Property Address" required />
+        <div class="card">
+          <h3>Roof Repair</h3>
+          <p>
+            Fast repairs for leaks, missing shingles, and damaged roofing systems.
+          </p>
+        </div>
 
-    <select>
-      <option>Storm Damage</option>
-      <option>Leak</option>
-      <option>Full Replacement</option>
-      <option>Insurance Claim Help</option>
-    </select>
+        <div class="card">
+          <h3>Roof Replacement</h3>
+          <p>
+            Full roof replacement using high-quality roofing materials.
+          </p>
+        </div>
 
-    <button type="submit">Get Inspection</button>
-  </form>
+      </div>
+    </div>
+  </section>
 
-  <p style="font-size:0.9rem;margin-top:10px;">
-    We respond within 24 hours.
-  </p>
-</section>
+  <section class="process">
+    <div class="container">
 
-<footer>
-  <p>© 2026 Dallas Roofing Partners. All rights reserved.</p>
-</footer>
+      <h2>Our Process</h2>
+
+      <p class="section-text">
+        A simple process focused on fast inspections, accurate documentation,
+        and quality roofing work.
+      </p>
+
+      <ol>
+        <li>Schedule your free roof inspection</li>
+        <li>We inspect and document storm damage</li>
+        <li>Insurance claim assistance and adjuster coordination</li>
+        <li>Roof repair or full replacement completion</li>
+      </ol>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <h2>Common Roof Problems We Find</h2>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>Hidden Hail Damage</h3>
+          <p>
+            Damage often invisible from the ground after severe storms.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Wind Damage</h3>
+          <p>
+            Missing shingles and lifted roofing materials after storms.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Roof Leaks</h3>
+          <p>
+            Interior water damage caused by compromised roofing systems.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Insurance Underpayment</h3>
+          <p>
+            Claims that fail to account for full storm-related damage.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <div class="cta">
+        <h2>Is Your Roof Storm-Damaged?</h2>
+
+        <p>
+          Small roofing issues can become major repair costs if ignored.
+          Schedule a free inspection today.
+        </p>
+
+        <a href="#contact" class="btn btn-primary">
+          Request Free Inspection
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+
+      <h2>Request Free Roof Inspection</h2>
+
+      <p class="section-text">
+        Submit your information and we’ll contact you to schedule an inspection.
+      </p>
+
+      <form>
+
+        <input
+          type="text"
+          placeholder="Full Name"
+          required
+        />
+
+        <input
+          type="tel"
+          placeholder="Phone Number"
+          required
+        />
+
+        <input
+          type="text"
+          placeholder="Property Address"
+          required
+        />
+
+        <select>
+          <option>Storm Damage</option>
+          <option>Roof Leak</option>
+          <option>Roof Replacement</option>
+          <option>Insurance Claim Help</option>
+        </select>
+
+        <textarea
+          rows="5"
+          placeholder="Describe your roofing issue"
+        ></textarea>
+
+        <button type="submit">
+          Get Free Inspection
+        </button>
+
+      </form>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      © 2026 Dallas Roofing Partners. All rights reserved.
+    </p>
+  </footer>
 
 </body>
 </html>
