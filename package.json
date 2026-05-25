@@ -13,12 +13,18 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",
-    "astro": "^6.3.7"
+    "@astrojs/svelte": "^8.1.1",
+    "@tailwindcss/vite": "^4.3.0",
+    "astro": "^6.3.7",
+    "svelte": "^5.55.9",
+    "tailwindcss": "^4.3.0",
+    "typescript": "^6.0.3"
   },
   "devDependencies": {
     "eslint": "^10.4.0",
     "eslint-plugin-astro": "^1.7.0",
     "prettier": "^3.8.3",
-    "prettier-plugin-astro": "^0.14.1"
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-svelte": "^4.0.1"
   }
 }
